@@ -304,12 +304,14 @@
             // 
             // btnNovo
             // 
+            btnNovo.BackColor = SystemColors.ButtonHighlight;
             btnNovo.Location = new Point(12, 9);
             btnNovo.Name = "btnNovo";
             btnNovo.Size = new Size(90, 29);
             btnNovo.TabIndex = 32;
             btnNovo.Text = "Novo";
-            btnNovo.UseVisualStyleBackColor = true;
+            btnNovo.UseVisualStyleBackColor = false;
+            btnNovo.Click += btnNovo_Click;
             // 
             // btnSalvar
             // 
@@ -320,6 +322,7 @@
             btnSalvar.TabIndex = 33;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnConsultar
             // 
@@ -329,6 +332,7 @@
             btnConsultar.TabIndex = 34;
             btnConsultar.Text = "Consultar";
             btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.Click += btnConsultar_Click;
             // 
             // btnAlterar
             // 
@@ -339,6 +343,7 @@
             btnAlterar.TabIndex = 35;
             btnAlterar.Text = "Alterar";
             btnAlterar.UseVisualStyleBackColor = true;
+            btnAlterar.Click += btnAlterar_Click;
             // 
             // btnExcluir
             // 
@@ -349,6 +354,7 @@
             btnExcluir.TabIndex = 36;
             btnExcluir.Text = "Excluir";
             btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // btnFechar
             // 
@@ -372,7 +378,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Info;
+            BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(txtb_Telefone);
             Controls.Add(txtb_LimCred);

@@ -80,6 +80,7 @@
             btnNovo.TabIndex = 4;
             btnNovo.Text = "Novo";
             btnNovo.UseVisualStyleBackColor = true;
+            btnNovo.Click += btnNovo_Click;
             // 
             // btnSalvar
             // 
@@ -90,6 +91,7 @@
             btnSalvar.TabIndex = 5;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnConsultar
             // 
@@ -99,6 +101,7 @@
             btnConsultar.TabIndex = 6;
             btnConsultar.Text = "Consultar";
             btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.Click += btnConsultar_Click;
             // 
             // btnAlterar
             // 
@@ -109,6 +112,7 @@
             btnAlterar.TabIndex = 7;
             btnAlterar.Text = "Alterar";
             btnAlterar.UseVisualStyleBackColor = true;
+            btnAlterar.Click += btnAlterar_Click;
             // 
             // btnExcluir
             // 
@@ -119,6 +123,7 @@
             btnExcluir.TabIndex = 8;
             btnExcluir.Text = "Excluir";
             btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // btnFechar
             // 
@@ -134,7 +139,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveBorder;
+            BackColor = Color.DarkKhaki;
             ClientSize = new Size(662, 209);
             Controls.Add(txtb_NomeCat);
             Controls.Add(txtb_CodCat);

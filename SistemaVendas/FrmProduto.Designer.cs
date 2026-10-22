@@ -117,6 +117,7 @@
             btnNovo.TabIndex = 8;
             btnNovo.Text = "Novo";
             btnNovo.UseVisualStyleBackColor = true;
+            btnNovo.Click += btnNovo_Click;
             // 
             // btnSalvar
             // 
@@ -127,6 +128,7 @@
             btnSalvar.TabIndex = 9;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnConsultar
             // 
@@ -136,6 +138,7 @@
             btnConsultar.TabIndex = 10;
             btnConsultar.Text = "Consultar";
             btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.Click += btnConsultar_Click;
             // 
             // btnAlterar
             // 
@@ -146,6 +149,7 @@
             btnAlterar.TabIndex = 11;
             btnAlterar.Text = "Alterar";
             btnAlterar.UseVisualStyleBackColor = true;
+            btnAlterar.Click += btnAlterar_Click;
             // 
             // btnExcluir
             // 
@@ -156,6 +160,7 @@
             btnExcluir.TabIndex = 12;
             btnExcluir.Text = "Excluir";
             btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // btnFechar
             // 
@@ -171,7 +176,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveBorder;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(606, 213);
             Controls.Add(cboCategoria);
             Controls.Add(txtb_precoProd);
@@ -189,6 +194,7 @@
             Controls.Add(btnFechar);
             Name = "FrmProduto";
             Text = "Cadastro de Produtos";
+            Load += FrmProduto_Load;
             ResumeLayout(false);
             PerformLayout();
         }
