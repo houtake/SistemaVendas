@@ -29,12 +29,5 @@ Um sistema de gestão de vendas desenvolvido em C# com Windows Forms e SQL Serve
 2. Abra a solução `.sln` no Visual Studio.
 3. No arquivo `Conexao.cs` (dentro da pasta `DAO`), certifique-se de que a `stringConexao` está apontando para o seu servidor SQL Server local (ex: `Data Source=localhost` ou `Data Source=.\SQLEXPRESS`).
 4. Execute o projeto (F5).
-
-## 🧑‍💻 Autores
-
-- [Seu Nome/GitHub]
-- [Nome do Integrante 2, se houver]
-- [Nome do Integrante 3, se houver]
-
 ---
 *Projeto desenvolvido para fins didáticos.*
