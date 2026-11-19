@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using SistemaVendas.Models;
 using SistemaVendas.DAO;
+using SistemaVendas.Utils;
 
 namespace SistemaVendas
 {
@@ -12,6 +13,7 @@ namespace SistemaVendas
         public FrmCliente()
         {
             InitializeComponent();
+            EstiloBotoes.Aplicar(this); // Aplicadorrrr
             AlterarEstadoBotoes(1);
         }
 
@@ -20,7 +22,7 @@ namespace SistemaVendas
         // ====================================================================
         private void AlterarEstadoBotoes(int estado)
         {
-            // Ativar ou desativar os controlos de acordo com a ação em curso
+            // Ativar ou desativar os botoes de acordo com a ação
             bool emEdicao = (estado == 2 || estado == 3);
 
             txtb_Nome.Enabled = emEdicao;
@@ -106,6 +108,11 @@ namespace SistemaVendas
                 MessageBox.Show("Preencha, pelo menos, o nome e o CPF do cliente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            if (!Ajudadores.ValidarCPF(txtb_CPF.Text))
+            {
+                MessageBox.Show("CPF inválido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             Cliente cli = new Cliente();
             PreencherObjeto(cli);
@@ -153,6 +160,11 @@ namespace SistemaVendas
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
+            if (!Ajudadores.ValidarCPF(txtb_CPF.Text))
+            {
+                MessageBox.Show("CPF inválido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             Cliente cli = new Cliente();
             cli.IdCliente = Convert.ToInt32(txtb_Cliente.Text);
             PreencherObjeto(cli);
@@ -180,7 +192,7 @@ namespace SistemaVendas
             this.Close();
         }
 
-    //Preenchedor master ja que tem campo pra dedeu
+        //Preenchedor master ja que tem campo pra dedeu
         private void PreencherObjeto(Cliente cli)
         {
             cli.Nome = txtb_Nome.Text;
@@ -206,6 +218,11 @@ namespace SistemaVendas
             {
                 cli.LimiteCredito = Convert.ToDecimal(txtb_LimCred.Text);
             }
+        }
+
+        private void FrmCliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

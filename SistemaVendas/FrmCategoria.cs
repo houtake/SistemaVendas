@@ -1,5 +1,6 @@
 ﻿using SistemaVendas.DAO;   
 using SistemaVendas.modelos;
+using SistemaVendas.Utils;
 
 namespace SistemaVendas
 {
@@ -11,7 +12,7 @@ namespace SistemaVendas
         public FrmCategoria()
         {
             InitializeComponent();
-
+            EstiloBotoes.Aplicar(this); // Aplicadorrrr
             //estado base
             AlterarEstadoBotoes(1);
         }
@@ -154,6 +155,11 @@ namespace SistemaVendas
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmCategoria_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

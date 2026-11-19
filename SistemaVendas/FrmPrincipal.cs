@@ -69,5 +69,10 @@ namespace SistemaVendas
 
             produto.Show();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

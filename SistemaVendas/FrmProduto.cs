@@ -1,5 +1,6 @@
 ﻿using SistemaVendas.DAO;
 using SistemaVendas.modelos;
+using SistemaVendas.Utils;
 using System;
 using System.Data;
 
@@ -14,6 +15,7 @@ namespace SistemaVendas
         {
             InitializeComponent();
             CarregarCategorias(); // Carrega a lista de categorias desdo inicio
+            EstiloBotoes.Aplicar(this); // Aplicadorrrr
             AlterarEstadoBotoes(1);
         }
 

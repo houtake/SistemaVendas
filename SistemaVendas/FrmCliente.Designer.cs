@@ -418,6 +418,7 @@
             Controls.Add(btnFechar);
             Name = "FrmCliente";
             Text = "Cadastro de Clientes";
+            Load += FrmCliente_Load;
             ResumeLayout(false);
             PerformLayout();
         }

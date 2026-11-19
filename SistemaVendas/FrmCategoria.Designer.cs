@@ -153,6 +153,7 @@
             Controls.Add(btnFechar);
             Name = "FrmCategoria";
             Text = "Cadastro de Categorias";
+            Load += FrmCategoria_Load;
             ResumeLayout(false);
             PerformLayout();
         }
