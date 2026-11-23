@@ -102,7 +102,7 @@ namespace SistemaVendas
             label1.Name = "label1";
             label1.Size = new Size(340, 20);
             label1.TabIndex = 7;
-            label1.Text = "Arthur Almeida";
+            label1.Text = "Giovanna Lima dos Santos";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click;
             // 
